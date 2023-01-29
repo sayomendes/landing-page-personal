@@ -1,5 +1,22 @@
+:root {
+  --dark: #30363d;
+  --light: #fff;
+
+  --primary-color-200: #00539b;
+  --primary-color-400: #004786;
+  --primary-color-500: #003b6f;
+  --primary-color-600: #00325f;
+  --primary-color-800: #012849;
+
+  --secondary-color-200: #d9f4f8;
+  --secondary-color-400: #b4eaf1;
+  --secondary-color-500: #8fdfea;
+  --secondary-color-600: #6ad5e3;
+  --secondary-color-800: #45cbdc;
+}
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
