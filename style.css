@@ -16,11 +16,17 @@
   --secondary-color-800: #45cbdc;
 }
 
+/********************************************************/
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+
+
+/********************************************************/
 
 nav {
     background-color: var(--primary-color-800);
@@ -73,6 +79,8 @@ a.active, a:hover {
     display: none;
 }
 
+/********************************************************/
+
 #background-video {
   width: 100vw;
   height: 100vh;
@@ -88,9 +96,8 @@ a.active, a:hover {
 .apresentation {
   min-height: 100vh;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 
-  gap: 40rem;
 
   background-color: var(--video);
 
@@ -109,23 +116,8 @@ a.active, a:hover {
   text-shadow: 0.1rem 0.1rem 0.1rem var(--dark);
 
   margin-top: 15rem;
-}
-
-.apresentation .content {
-  align-self: center;
-  justify-self: center;
-}
-
-.apresentation div p {
-  color: #fff;
-  text-align: justify;
-  font-size: 4.8rem;
-  text-shadow: 0.1rem 0.1rem 0.1rem black;
+  margin-left: 15rem;
   
-
-  animation: fade 4s;
-
-  padding: 2rem;
 }
 
 @keyframes fade {
@@ -139,6 +131,47 @@ a.active, a:hover {
     opacity: 1;
   }
 }
+
+/********************************************************/
+
+.informations {
+  min-height: 100vh;
+
+  background-color: var(--primary-color-800);
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+}
+
+.informations .text {
+  width: 80rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.informations .text h1 {
+  text-align: center;
+  font-size: 5.5rem;
+  padding: 1rem;
+}
+
+.informations .text p {
+  font-size: 3rem;
+  padding: 1rem;
+
+  text-align: justify;
+  line-height: 3.8rem;
+}
+
+#content-img img {
+  width: 40rem;
+}
+
+/********************************************************/
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
